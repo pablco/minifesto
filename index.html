@@ -3,35 +3,43 @@
 <!--[if IEMobile 7 ]>
 <html id="blaskan" class="no-js iem7"><![endif]-->
 <!--[if lt IE 7 ]>
-<html id="blaskan" class="no-js ie6" ><![endif]-->
+<html id="blaskan" class="no-js ie6"><![endif]-->
 <!--[if IE 7 ]>
-<html id="blaskan" class="no-js ie7" ><![endif]-->
+<html id="blaskan" class="no-js ie7"><![endif]-->
 <!--[if IE 8 ]>
-<html id="blaskan" class="no-js ie8" ><![endif]-->
+<html id="blaskan" class="no-js ie8"><![endif]-->
 <!--[if IE 9 ]>
-<html id="blaskan" class="no-js ie9" ><![endif]-->
-<!--[if (gt IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html id="blaskan"
-                                                                class="no-js">
+<html id="blaskan" class="no-js ie9"><![endif]-->
+<!--[if (gt IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!-->
+<html id="blaskan"
+      class="no-js">
 <!--<![endif]-->
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" type="text/css" href="/style.css" media="all">
     <meta charset="UTF-8">
+    <meta property="og:image" content="http://minifesto.org/fb.png"/>
+    <meta property="og:title" content="Manifesto for Minimalist Software Engineers"/>
+    <meta property="og:site_name" content="Minifesto"/>
+    <meta property="og:type" content="website"/>
+
 
     <link href='http://fonts.googleapis.com/css?family=Arbutus+Slab' rel='stylesheet' type='text/css'>
     <script type='text/javascript' src='/modernizr.min.js?ver=3.4.2'></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="./jquery.sharrre-1.3.4.min.js"></script>
 
     <script>
-    if (true || navigator.appVersion.indexOf("Win") != -1) {
-        var windowsCss = document.createElement("link");
-        windowsCss.setAttribute("rel", "stylesheet");
-        windowsCss.setAttribute("media", "all");
-        windowsCss.setAttribute("href", "/windows.css");
-        var head = document.getElementsByTagName("head")[0];
-        head.appendChild(windowsCss);
-        windows = true;
-    }
+        if (true || navigator.appVersion.indexOf("Win") != -1) {
+            var windowsCss = document.createElement("link");
+            windowsCss.setAttribute("rel", "stylesheet");
+            windowsCss.setAttribute("media", "all");
+            windowsCss.setAttribute("href", "/windows.css");
+            var head = document.getElementsByTagName("head")[0];
+            head.appendChild(windowsCss);
+            windows = true;
+        }
     </script>
 
 
@@ -42,194 +50,368 @@
 <body>
 
 <article id="content">
-    <header><a class="fade-in one" id="logo" href="/">&nbsp;</a></header>
-    <div id="scrollbubble"><span id="scrollBubbleText"></span></div>
+<header><a class="fade-in one" id="logo" href="/">&nbsp;</a></header>
+<div id="scrollbubble"><span id="scrollBubbleText"></span></div>
 
-    <section id="posts">
-        <article class="blog_post"><h1 class="section_separator"><span style="color: black!important">MANIFESTO FOR MINIMALIST SOFTWARE ENGINEERS</span></h1>
-        </article>
+<section id="posts">
+    <article class="blog_post"><h1 class="section_separator"><span style="color: black!important">MANIFESTO FOR MINIMALIST SOFTWARE ENGINEERS</span>
+    </h1>
+    </article>
 
-        <section class="fade-in two" id="toc-main">
-            <ul>
-                <li><a id="0"><em>Fight for Pareto</em>'s law, look for the 20% of effort that will give you the 80% of results.</a></li>
-                <li><a id="1"><em>Prioritize</em>, minimalism isn't about not doing things but about focusing first in the important.</a></li>
-                <li><a id="2"><em>Perfect is enemy of good</em>, first do it, then do it right, then do it better.</a></li>
-                <li><a id="3"><em>Kill the baby</em>, don't be afraid of starting all over again. Fail soon, learn fast.</a></li>
-                <li><a id="4"><em>Add value</em>. Think constantly how you can help your team and position yourself in that field/skill.</a></li>
-                <li><a id="5"><em>Basics, first</em>. Follow always a top-down thinking starting by the best-practises of CS.</a></li>
-                <li><a id="6"><em>Think different</em>. Simple is harder than complex, which means you'll need to use your creativity.</a></li>
-                <li><a id="7"><em>Synthesis</em> is the key of communication. We have to write code for humans not machines.</a></li>
-                <li><a id="8"><em>Keep it plain</em>. Try to keep your designs with few layers of indirection.</a></li>
-                <li><a id="9"><em>Clean kippel</em> and redundancy. Minimalism is all about removing distractions.</a></li>
-            </ul>
-        </section>
-
-        <section id="toc">
-            <ul>
-                <li><a id="0">Fight for Pareto</a></li>
-                <li><a id="1">Prioritize</a></li>
-                <li><a id="2">Perfect is enemy of good</a></li>
-                <li><a id="3">Kill the baby</a></li>
-                <li><a id="4">Add value</a></li>
-                <li><a id="5">Basics, first</a></li>
-                <li><a id="6">Think different</a></li>
-                <li><a id="7">Synthesise</a></li>
-                <li><a id="8">Keep it plain</a></li>
-                <li><a id="9">Clean kippel</a></li>
-            </ul>
-        </section>
-
-
-        <article class="blog_post"><h1 id="0Title" class="section_separator"><span>I</span></h1>
-
-            <h2 class="blog_post_title"><a href="/">Fight for Pareto</a></h2>
-
-            <div class="blog_post_content">
-                <p>Pareto's law states that <em>80% of the results come from 20% of features</em> (effort) of your application. Bear this in mind when planning the next scrum/delivery.</p>
-                <p>The best engineers are those who can <em>estimate the effort</em> of new requirements and they are the only with enough information to refuse the 80% that is not in the optimal next scope.</p>
-                <p><em>Own it</em>! This is not the army, they pay you to think and take decisions and responsibility so <em>speak up</em> if you consider the requirements proposed are superfluous.</p>
-                <p>The <em>worst</em> code you've ever written is the code that is no longer used. Is called YAGNI (You Are Not Gonna Need It).</p>
-                <p>The <em>best</em> code you've ever written is the code you didn't write, simply because it's the only that never fails.</p>
-            </div>
-            <a href="/" class="more_link">More</a>
-        </article>
-        <article class="blog_post"><h1 id="1Title" class="section_separator"><span>II</span></h1>
-
-            <h2 class="blog_post_title"><a
-                    href="/" id="bTitle">Prioritize</a></h2>
-
-            <div class="blog_post_content">
-                <p>There's something I call fixing a bug by <em>sedimentation</em> (fixing it by accumulation of other bugs) or by <em>erosion</em> (client changed his mind). These are good examples where prioritization and waiting saved you from doing a worthless job.</p>
-                <p>Minimalism is not about not doing things but about <em>focusing first</em> in the most important.</p>
-            </div>
-            <a href="/" class="more_link">More</a>
-        </article>
-        <article class="blog_post"><h1 id="2Title" class="section_separator"><span>III</span></h1>
-
-            <h2 class="blog_post_title"><a href="/">Perfect is enemy of good</a></h2>
-
-            <div class="blog_post_content">
-                <p>Look for perfection, but not yet. <em>Iteration</em> is that friend that gives you the right advises at the right time.</p>
-                <p><em>First do it</em>, then do it right, then do it better.</p>
-                <p>Engineers like to think that the world could be designed, however Nature shows the opposite. Any sufficiently complex system cannot be built out of design, <em>it has to be evolved</em>.</p>
-                <p>Consider everything as a work in progress and don't panic if it doesn't work right yet, remember <em>Mosher's law</em>, if everything worked right, you'd be out of a job.</p>
-            </div>
-            <a href="/" class="more_link">More</a></article>
-        <article class="blog_post"><h1 id="3Title" class="section_separator"><span>IV</span></h1>
-
-            <h2 class="blog_post_title"><a href="/">Kill the baby</a></h2>
-
-            <div class="blog_post_content">
-                <p><em>Kill it</em>. The sooner the better. Don't be afraid of throwing to the rubbish a project you've working on last months.</p>
-                <p>When you start from scratch, <em>innovation</em> comes organically inspired by previous experiences.</p>
-                <p>Evaluate your work constantly. This is what the book <a target="_blank" href="http://theleanstartup.com/"><em>Lean Startup</em></a> is all about, make your MVP (Minimum Viable Prototype) and validate it, if it doesn't fit, kill it, you will already learned from it.</p>
-                <p>Fail fast, learn soon.</p>
-            </div>
-            <a href="/" class="more_link">More</a>
-        </article>
-        <article class="blog_post"><h1 id="4Title" class="section_separator"><span>V </span></h1>
-
-            <h2 class="blog_post_title"><a href="/">Add value</a></h2>
-
-            <div class="blog_post_content">
-                <p>Nobody can know much of everything.</p>
-                <p>Try to <em>ask yourself</em> how can you add value to your team. What do they need the most? Somebody who is an expert with scalability?, Somebody who knows every detail of the programming language? Somebody more focused in the product? A coordinator?</p>
-                <p>Every team is different so you have to <em>adapt</em> and choose, try to analyse the strengths and weakness of both you and your team.</p>
-                <p>Learn to love a particular thing and <em>master it</em>. Try to position yourself, it's like a brand, you like products that fulfill your needs not those who do a lot of things you already do by yourself.</p>
-                <p>Of course it's easier to get along well with people with whom you share common language but the real power is on <em>complementary people</em>, remember the A-team!</p>
-            </div>
-            <a href="/" class="more_link">More</a>
-        </article>
-        <article class="blog_post"><h1 id="5Title" class="section_separator"><span>VI</span></h1>
-
-            <h2 class="blog_post_title"><a href="/">Basics, first</a></h2>
-
-            <div class="blog_post_content">
-                <p>In some late point of our life we realise about the importance of basics. It's normally old people who claim they have gone <em>back to basics</em>. Don't be a fool and don't wait to realise about that so late, bet for basics, first.</p>
-                <p>There are very valuable concepts in CS (Computer Science) and the good thing is that you can apply them to <em>every</em> new design. You should try always a top-down thinking starting from them.</p>
-                <p>Borrowing an old saying, the three most important things in software development are: <em>architecture</em>, architecture and architecture, in that order.</p>
-                <p>Some examples of basics are: 
-                    <a target="_blank" href="http://en.wikipedia.org/wiki/Separation_of_concerns">Separation of concerns</a>,
-                    <a target="_blank" href="http://en.wikipedia.org/wiki/Systems_theory">Systems engineering theory</a>,
-                    <a target="_blank" href="http://geekswithblogs.net/subodhnpushpak/archive/2009/09/18/the-23-gang-of-four-design-patterns-.-revisited.aspx">GOF design patterns</a>,
-                    <a target="_blank" href="http://en.wikipedia.org/wiki/GRASP_(object-oriented_design)">GRASP responsability patterns</a>,
-                    <a target="_blank" href="http://en.wikipedia.org/wiki/SOLID_(object-oriented_design)">SOLID principles</a>,
-                    <a target="_blank" href="http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882">Cleancode smells & heuristics</a>,
-                    <a target="_blank" href="http://agilemanifesto.org/">Agile guidelines</a>,
-                    <a target="_blank" href="http://www.computerworld.com/s/article/314087/Back_to_Basics_Algorithms">Algorithmia</a>,
-                    <a target="_blank" href="http://en.wikipedia.org/wiki/List_of_data_structures">Data structures</a>,
-                    <a target="_blank" href="http://www.w3.org/Protocols/Specs.html">HTTP specification</a>...</p>
-                <p>For example before you start digging into the details of how to use an specific unit test framework Jasmine, JUnit, Mocha... start learning in how to write <a target="_blank" href="http://misko.hevery.com/code-reviewers-guide/">testable code</a> (for example isolating stateless code of your application and reducing the coupling between components).</p>
-            </div>
-            <a href="/" class="more_link">More</a>
-        </article>
-        <article class="blog_post"><h1 id="6Title" class="section_separator"><span>VII</span></h1>
-
-            <h2 class="blog_post_title"><a href="/">Think different</a></h2>
-
-            <div class="blog_post_content">
-                <p><em>Simple</em> is harder than complex, minimalism requires a lot of creativity in order to find new ways of doing more with less.</p>
-                <p>Technical Skill is the mastery of complexity, while <em>Creativity</em> is the master of simplicity.</p>
-                <p>Creativity is intelligence having fun! so enjoy the opportunity.</p>
-                <p>So don't focus on working more, but in working less but smartly, Think! about your work, turn off the autopilot, leave the <em>comfort zone</em> and take control.</p>
-                <p>And hey! Don't be shy, it takes guts to change the status quo. But remember, the world you are living in is made by people no smarter than you are, they just <em>believed</em> it was possible.</p>
-                <p>Of course people will think you are a weirdo sometimes because the things you try are different, but you can't be a <em>leader</em> if you are not an innovator.</p>
-                <p>For example I'm sure every one of us has thought in some point that his company is loosing too much time in meetings were you discuss about nothing. So Jeff Bezos, Founder and CEO of Amazon, has a particular and apparently a <a target="_blank" href="http://www.businessinsider.com/jeff-bezos-amazon-fortune-interview-2012-11">weird</a> way to conduct  meetings in his company. When all the attendants arrive to the meeting room they have 30 minutes to read the report of the meeting IN STRICT SILENCE. After that the meeting can start.</p>
-            </div>
-            <a href="/" class="more_link">More</a>
-        </article>
-        <article class="blog_post"><h1 id="7Title" class="section_separator"><span>VIII</span></h1>
-
-            <h2 class="blog_post_title"><a href="/">Synthesise</a></h2>
-
-            <div class="blog_post_content">
-                <p>We have to write <em>code for humans</em>, not machines, and synthesis is the key of communication.</p>
-                <p>A good example is the Pascal's quotation "If I Had More Time, I Would Have Written a <em>Shorter</em> Letter".</p>
-                <p>Try to keep methods as short as possible, classes with a single responsibility, few parameters, avoid redundant comments… The work is finished when you have nothing to <em>take away</em>.</p>
-            </div>
-            <a href="/" class="more_link">More</a>
-        </article>
-        <article class="blog_post"><h1 id="8Title" class="section_separator"><span>IX</span></h1>
-
-            <h2 class="blog_post_title"><a href="/">Keep it plain</a></h2>
-
-            <div class="blog_post_content">
-                <p>In software programming you can solve any problem by adding another layer of indirection, except the problem of <em>too much indirection</em>. This is true, and it means that we have to find balance in the complexity of our designs.</p>
-                <p>Abstraction is good, it allows us to create a <em>new semantic level</em> in which one can be absolutely precise. However, in some cases like refactoring we have to understand the big picture and it makes everything harder.</p>
-                <p>This is why we have to look for the natural points where we can make the division and try to understand the different possible <em>trade-offs</em>.</p>
-                <p>Examples of that are: Root-Leaf paradigm in Domain Model. Controller/Tools paradigm, <a target="_blank" href="http://www.codeodor.com/index.cfm/2009/6/17/strive-for-low-coupling-and-high-cohesion-what-does-that-even-mean/2902">High Cohesion/Low Coupling principle</a>, <a target="_blank" href="https://restful-api-design.readthedocs.org/en/latest/">plain RESTful APIs</a>...</p>
-            </div>
-            <a href="/" class="more_link">More</a>
-        </article>
-        <article class="blog_post"><h1 id="9Title" class="section_separator"><span>X</span></h1>
-
-            <h2 class="blog_post_title"><a href="/">Clean kippel</a></h2>
-
-            <div class="blog_post_content">
-                <p>There's a concept named <em>kippel</em> that refers to all those things we keep but we never use. Our homes are full of it, so are our codebases. For example, legacy methods we are afraid to delete, just-in-case libraries we will never need, out of date comments…</p>
-                <p>It's only human nature to complicate so we have to enforce ourselves to <em>simplify</em>. This is a process we have to follow periodically, identify the kippel and destroy it.</p>
-                <p>Minimalism: it's all about <em>avoiding distractions</em> so that we can focus in the important things.</p>
-            </div>
-            <a href="/" class="more_link">More</a>
-        </article>
+    <section class="fade-in two" id="toc-main">
+        <ul>
+            <li><a id="0"><em>Fight for Pareto</em>'s law, look for the 20% of effort that will give you the 80% of
+                results.</a></li>
+            <li><a id="1"><em>Prioritize</em>, minimalism isn't about not doing things but about focusing first in the
+                important.</a></li>
+            <li><a id="2"><em>Perfect is enemy of good</em>, first do it, then do it right, then do it better.</a></li>
+            <li><a id="3"><em>Kill the baby</em>, don't be afraid of starting all over again. Fail soon, learn fast.</a>
+            </li>
+            <li><a id="4"><em>Add value</em>. Think constantly how you can help your team and position yourself in that
+                field/skill.</a></li>
+            <li><a id="5"><em>Basics, first</em>. Follow always a top-down thinking starting by the best-practises of
+                CS.</a></li>
+            <li><a id="6"><em>Think different</em>. Simple is harder than complex, which means you'll need to use your
+                creativity.</a></li>
+            <li><a id="7"><em>Synthesis</em> is the key of communication. We have to write code for humans not machines.</a>
+            </li>
+            <li><a id="8"><em>Keep it plain</em>. Try to keep your designs with few layers of indirection.</a></li>
+            <li><a id="9"><em>Clean kippel</em> and redundancy. Minimalism is all about removing distractions.</a></li>
+        </ul>
     </section>
-    <!--<section id="contact"><h1 class="section_separator"><span>Share</span></h1>-->
 
-        <!--<p>Share it on Facebook, Twitter or Linkedin</a>.</p>-->
+    <section id="toc">
+        <ul>
+            <li><a id="0">Fight for Pareto</a></li>
+            <li><a id="1">Prioritize</a></li>
+            <li><a id="2">Perfect is enemy of good</a></li>
+            <li><a id="3">Kill the baby</a></li>
+            <li><a id="4">Add value</a></li>
+            <li><a id="5">Basics, first</a></li>
+            <li><a id="6">Think different</a></li>
+            <li><a id="7">Synthesise</a></li>
+            <li><a id="8">Keep it plain</a></li>
+            <li><a id="9">Clean kippel</a></li>
+        </ul>
+        <div id="example6">
+            <div id="sharemee" data-url="http://minifesto.org/"
+                 data-text="Manifesto for Minimalist Software Engineers"></div>
+        </div>
+        <script>
 
-        <!--<div id="contact_form" class="clearfix">-->
-            <!--<div id="contact_success"><em>Thank you</em>-->
+            $('#sharemee').sharrre({
+                share: {
+                    twitter: true,
+                    facebook: true,
+                    googlePlus: true,
+                    linkedin: true
+                },
+                buttons: {
+                    twitter: {count: 'vertical'},
+                    facebook: {layout: 'box_count'},
+                    linkedin: {counter: 'top'},
+                    googlePlus: {size: 'tall'}
+                },
+                enableHover: false,
+                enableCounter: false,
+                enableTracking: true
+            })
+        </script>
+    </section>
+</section>
+<section id="share">
+<div id="example5">
+    <div id="shareme" data-url="http://minifesto.org/"
+         data-text="Manifesto for Minimalist Software Engineers"></div>
+</div>
+<script>
+    $('#shareme').sharrre({
+        share: {
+            twitter: true,
+            facebook: true,
+            googlePlus: true,
+            linkedin: true
+        },
+        buttons: {
+            twitter: {count: 'vertical'},
+            facebook: {layout: 'box_count'},
+            linkedin: {counter: 'top'},
+            googlePlus: {size: 'tall'}
+        },
+        enableHover: false,
+        enableCounter: false,
+        enableTracking: true
+    });
+</script>
+<style type="text/css">
+    #example5 {
+        margin: auto;
+        width: 252px;
+    }
 
-                <!--<p>Your message was successfully sent.</p></div>-->
-            <!--<div id="letter"></div>-->
-        <!--</div>-->
-    <!--</section>-->
-    <footer><h1 class="section_separator"><span></span></h1>
-        <nav><a
-                style="color: #4AED05 !important"
-                target="_blank" href="http://pabloguevara.com">pabloguevara.com</a></nav>
-        <span>©2013 Minimalist Software Engineer's manifesto.</span>
-    </footer>
+    .sharrre .button {
+        float: left;
+        width: 60px;
+    }
+</style>
+</section>
+<article class="blog_post"><h1 id="0Title" class="section_separator"><span>I</span></h1>
+
+    <h2 class="blog_post_title"><a href="/">Fight for Pareto</a></h2>
+
+    <div class="blog_post_content">
+        <p>Pareto's law states that <em>80% of the results come from 20% of features</em> (effort) of your
+            application. Bear this in mind when planning the next scrum/delivery.</p>
+
+        <p>The best engineers are those who can <em>estimate the effort</em> of new requirements and they are the
+            only with enough information to refuse the 80% that is not in the optimal next scope.</p>
+
+        <p><em>Own it</em>! This is not the army, they pay you to think and take decisions and responsibility so
+            <em>speak up</em> if you consider the requirements proposed are superfluous.</p>
+
+        <p>The <em>worst</em> code you've ever written is the code that is no longer used. Is called YAGNI (You Are
+            Not Gonna Need It).</p>
+
+        <p>The <em>best</em> code you've ever written is the code you didn't write, simply because it's the only
+            that never fails.</p>
+    </div>
+    <a href="/" class="more_link">More</a>
+</article>
+<article class="blog_post"><h1 id="1Title" class="section_separator"><span>II</span></h1>
+
+    <h2 class="blog_post_title"><a
+            href="/" id="bTitle">Prioritize</a></h2>
+
+    <div class="blog_post_content">
+        <p>There's something I call fixing a bug by <em>sedimentation</em> (fixing it by accumulation of other bugs)
+            or by <em>erosion</em> (client changed his mind). These are good examples where prioritization and
+            waiting saved you from doing a worthless job.</p>
+
+        <p>Minimalism is not about not doing things but about <em>focusing first</em> in the most important.</p>
+    </div>
+    <a href="/" class="more_link">More</a>
+</article>
+<article class="blog_post"><h1 id="2Title" class="section_separator"><span>III</span></h1>
+
+    <h2 class="blog_post_title"><a href="/">Perfect is enemy of good</a></h2>
+
+    <div class="blog_post_content">
+        <p>Look for perfection, but not yet. <em>Iteration</em> is that friend that gives you the right advises at
+            the right time.</p>
+
+        <p><em>First do it</em>, then do it right, then do it better.</p>
+
+        <p>Engineers like to think that the world could be designed, however Nature shows the opposite. Any
+            sufficiently complex system cannot be built out of design, <em>it has to be evolved</em>.</p>
+
+        <p>Consider everything as a work in progress and don't panic if it doesn't work right yet, remember <em>Mosher's
+            law</em>, if everything worked right, you'd be out of a job.</p>
+    </div>
+    <a href="/" class="more_link">More</a></article>
+<article class="blog_post"><h1 id="3Title" class="section_separator"><span>IV</span></h1>
+
+    <h2 class="blog_post_title"><a href="/">Kill the baby</a></h2>
+
+    <div class="blog_post_content">
+        <p><em>Kill it</em>. The sooner the better. Don't be afraid of throwing to the rubbish a project you've
+            working on last months.</p>
+
+        <p>When you start from scratch, <em>innovation</em> comes organically inspired by previous experiences.</p>
+
+        <p>Evaluate your work constantly. This is what the book <a target="_blank"
+                                                                   href="http://theleanstartup.com/"><em>Lean
+            Startup</em></a> is all about, make your MVP (Minimum Viable Prototype) and validate it, if it doesn't
+            fit, kill it, you will already learned from it.</p>
+
+        <p>Fail fast, learn soon.</p>
+    </div>
+    <a href="/" class="more_link">More</a>
+</article>
+<article class="blog_post"><h1 id="4Title" class="section_separator"><span>V </span></h1>
+
+    <h2 class="blog_post_title"><a href="/">Add value</a></h2>
+
+    <div class="blog_post_content">
+        <p>Nobody can know much of everything.</p>
+
+        <p>Try to <em>ask yourself</em> how can you add value to your team. What do they need the most? Somebody who
+            is an expert with scalability?, Somebody who knows every detail of the programming language? Somebody
+            more focused in the product? A coordinator?</p>
+
+        <p>Every team is different so you have to <em>adapt</em> and choose, try to analyse the strengths and
+            weakness of both you and your team.</p>
+
+        <p>Learn to love a particular thing and <em>master it</em>. Try to position yourself, it's like a brand, you
+            like products that fulfill your needs not those who do a lot of things you already do by yourself.</p>
+
+        <p>Of course it's easier to get along well with people with whom you share common language but the real
+            power is on <em>complementary people</em>, remember the A-team!</p>
+    </div>
+    <a href="/" class="more_link">More</a>
+</article>
+<article class="blog_post"><h1 id="5Title" class="section_separator"><span>VI</span></h1>
+
+    <h2 class="blog_post_title"><a href="/">Basics, first</a></h2>
+
+    <div class="blog_post_content">
+        <p>In some late point of our life we realise about the importance of basics. It's normally old people who
+            claim they have gone <em>back to basics</em>. Don't be a fool and don't wait to realise about that so
+            late, bet for basics, first.</p>
+
+        <p>There are very valuable concepts in CS (Computer Science) and the good thing is that you can apply them
+            to <em>every</em> new design. You should try always a top-down thinking starting from them.</p>
+
+        <p>Borrowing an old saying, the three most important things in software development are:
+            <em>architecture</em>, architecture and architecture, in that order.</p>
+
+        <p>Some examples of basics are:
+            <a target="_blank" href="http://en.wikipedia.org/wiki/Separation_of_concerns">Separation of concerns</a>,
+            <a target="_blank" href="http://en.wikipedia.org/wiki/Systems_theory">Systems engineering theory</a>,
+            <a target="_blank"
+               href="http://geekswithblogs.net/subodhnpushpak/archive/2009/09/18/the-23-gang-of-four-design-patterns-.-revisited.aspx">GOF
+                design patterns</a>,
+            <a target="_blank" href="http://en.wikipedia.org/wiki/GRASP_(object-oriented_design)">GRASP
+                responsability patterns</a>,
+            <a target="_blank" href="http://en.wikipedia.org/wiki/SOLID_(object-oriented_design)">SOLID
+                principles</a>,
+            <a target="_blank"
+               href="http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882">Cleancode
+                smells & heuristics</a>,
+            <a target="_blank" href="http://agilemanifesto.org/">Agile guidelines</a>,
+            <a target="_blank" href="http://www.computerworld.com/s/article/314087/Back_to_Basics_Algorithms">Algorithmia</a>,
+            <a target="_blank" href="http://en.wikipedia.org/wiki/List_of_data_structures">Data structures</a>,
+            <a target="_blank" href="http://www.w3.org/Protocols/Specs.html">HTTP specification</a>...</p>
+
+        <p>For example before you start digging into the details of how to use an specific unit test framework
+            Jasmine, JUnit, Mocha... start learning in how to write <a target="_blank"
+                                                                       href="http://misko.hevery.com/code-reviewers-guide/">testable
+                code</a> (for example isolating stateless code of your application and reducing the coupling between
+            components).</p>
+    </div>
+    <a href="/" class="more_link">More</a>
+</article>
+<article class="blog_post"><h1 id="6Title" class="section_separator"><span>VII</span></h1>
+
+    <h2 class="blog_post_title"><a href="/">Think different</a></h2>
+
+    <div class="blog_post_content">
+        <p><em>Simple</em> is harder than complex, minimalism requires a lot of creativity in order to find new ways
+            of doing more with less.</p>
+
+        <p>Technical Skill is the mastery of complexity, while <em>Creativity</em> is the master of simplicity.</p>
+
+        <p>Creativity is intelligence having fun! so enjoy the opportunity.</p>
+
+        <p>So don't focus on working more, but in working less but smartly, Think! about your work, turn off the
+            autopilot, leave the <em>comfort zone</em> and take control.</p>
+
+        <p>And hey! Don't be shy, it takes guts to change the status quo. But remember, the world you are living in
+            is made by people no smarter than you are, they just <em>believed</em> it was possible.</p>
+
+        <p>Of course people will think you are a weirdo sometimes because the things you try are different, but you
+            can't be a <em>leader</em> if you are not an innovator.</p>
+
+        <p>For example I'm sure every one of us has thought in some point that his company is loosing too much time
+            in meetings were you discuss about nothing. So Jeff Bezos, Founder and CEO of Amazon, has a particular
+            and apparently a <a target="_blank"
+                                href="http://www.businessinsider.com/jeff-bezos-amazon-fortune-interview-2012-11">weird</a>
+            way to conduct meetings in his company. When all the attendants arrive to the meeting room they have 30
+            minutes to read the report of the meeting IN STRICT SILENCE. After that the meeting can start.</p>
+    </div>
+    <a href="/" class="more_link">More</a>
+</article>
+<article class="blog_post"><h1 id="7Title" class="section_separator"><span>VIII</span></h1>
+
+    <h2 class="blog_post_title"><a href="/">Synthesise</a></h2>
+
+    <div class="blog_post_content">
+        <p>We have to write <em>code for humans</em>, not machines, and synthesis is the key of communication.</p>
+
+        <p>A good example is the Pascal's quotation "If I Had More Time, I Would Have Written a <em>Shorter</em>
+            Letter".</p>
+
+        <p>Try to keep methods as short as possible, classes with a single responsibility, few parameters, avoid
+            redundant comments… The work is finished when you have nothing to <em>take away</em>.</p>
+    </div>
+    <a href="/" class="more_link">More</a>
+</article>
+<article class="blog_post"><h1 id="8Title" class="section_separator"><span>IX</span></h1>
+
+    <h2 class="blog_post_title"><a href="/">Keep it plain</a></h2>
+
+    <div class="blog_post_content">
+        <p>In software programming you can solve any problem by adding another layer of indirection, except the
+            problem of <em>too much indirection</em>. This is true, and it means that we have to find balance in the
+            complexity of our designs.</p>
+
+        <p>Abstraction is good, it allows us to create a <em>new semantic level</em> in which one can be absolutely
+            precise. However, in some cases like refactoring we have to understand the big picture and it makes
+            everything harder.</p>
+
+        <p>This is why we have to look for the natural points where we can make the division and try to understand
+            the different possible <em>trade-offs</em>.</p>
+
+        <p>Examples of that are: Root-Leaf paradigm in Domain Model. Controller/Tools paradigm, <a target="_blank"
+                                                                                                   href="http://www.codeodor.com/index.cfm/2009/6/17/strive-for-low-coupling-and-high-cohesion-what-does-that-even-mean/2902">High
+            Cohesion/Low Coupling principle</a>, <a target="_blank"
+                                                    href="https://restful-api-design.readthedocs.org/en/latest/">plain
+            RESTful APIs</a>...</p>
+    </div>
+    <a href="/" class="more_link">More</a>
+</article>
+<article class="blog_post"><h1 id="9Title" class="section_separator"><span>X</span></h1>
+
+    <h2 class="blog_post_title"><a href="/">Clean kippel</a></h2>
+
+    <div class="blog_post_content">
+        <p>There's a concept named <em>kippel</em> that refers to all those things we keep but we never use. Our
+            homes are full of it, so are our codebases. For example, legacy methods we are afraid to delete,
+            just-in-case libraries we will never need, out of date comments…</p>
+
+        <p>It's only human nature to complicate so we have to enforce ourselves to <em>simplify</em>. This is a
+            process we have to follow periodically, identify the kippel and destroy it.</p>
+
+        <p>Minimalism: it's all about <em>avoiding distractions</em> so that we can focus in the important things.
+        </p>
+    </div>
+    <a href="/" class="more_link">More</a>
+</article>
+</section>
+<!--<section id="contact"><h1 class="section_separator"><span>Share</span></h1>-->
+
+<!--<p>Share it on Facebook, Twitter or Linkedin</a>.</p>-->
+
+<!--<div id="contact_form" class="clearfix">-->
+<!--<div id="contact_success"><em>Thank you</em>-->
+
+<!--<p>Your message was successfully sent.</p></div>-->
+<!--<div id="letter"></div>-->
+<!--</div>-->
+<!--</section>-->
+<div style="margin-top: 180px;" id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'minifesto'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<footer><h1 class="section_separator"><span></span></h1>
+    <nav><a
+            style="color: #4AED05 !important"
+            target="_blank" href="http://pabloguevara.com">pabloguevara.com</a></nav>
+    <span>©2013 Minimalist Software Engineer's manifesto.</span>
+</footer>
 </article>
 
 <div style="display: none;" id="hiddenlpsubmitdiv"></div>
