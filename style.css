@@ -2257,7 +2257,7 @@ div.wpcf7
 }
 
 #toc-main {
-    padding-bottom: 120px;
+    padding-bottom: 25px;
     text-align: center;
 }
 
@@ -2338,4 +2338,21 @@ article em{
     -webkit-animation-delay: 1.8s;
     -moz-animation-delay: 1.8s;
     animation-delay: 1.8s;
+}
+
+/*section#share > div{*/
+    /*width: 319px;*/
+    /*text-align: center;*/
+    /*margin-bottom: 107px;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+/*}*/
+
+#share{
+    height: 213px;
+    text-align: center;
+}
+
+#example6{
+    margin-top: 65px;
 }
