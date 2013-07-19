@@ -29,19 +29,7 @@
     <script type='text/javascript' src='modernizr.min.js?ver=3.4.2'></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="jquery.sharrre-1.3.4.min.js"></script>
-
-    <script>
-        if (true || navigator.appVersion.indexOf("Win") != -1) {
-            var windowsCss = document.createElement("link");
-            windowsCss.setAttribute("rel", "stylesheet");
-            windowsCss.setAttribute("media", "all");
-            windowsCss.setAttribute("href", "/windows.css");
-            var head = document.getElementsByTagName("head")[0];
-            head.appendChild(windowsCss);
-            windows = true;
-        }
-    </script>
-
+    <link href="windows.css" rel="stylesheet" media="all" type="text/css">
 
     <meta name="description" content="Minifesto for Minimalist Software Engineers">
     <meta name="viewport" content="width=device-width, initial-scale=1">
